@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StreamSpark</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="logo.png" alt="StreamSpark Logo" class="logo">
+
+        <h1>StreamSpark</h1>
+
+        <p class="subtitle">
+            Kick yayıncıları için yapay zekâ destekli içerik asistanı
+        </p>
+
+        <input
+            type="text"
+            id="game"
+            placeholder="🎮 Oyun Adı"
+        >
+
+        <input
+            type="text"
+            id="topic"
+            placeholder="💡 Yayın Konusu"
+        >
+
+        <select id="style">
+            <option>Rank Kasma</option>
+            <option>Eğlence</option>
+            <option>Challenge</option>
+            <option>Sohbet</option>
+        </select>
+
+        <div class="actions">
+
+            <button onclick="generateTitles()">
+                ⚡ Başlık Üret
+            </button>
+
+            <button onclick="generateDescription()">
+                📝 Açıklama Üret
+            </button>
+
+            <button onclick="generateThumbnailIdeas()">
+                🎯 Thumbnail Fikri
+            </button>
+
+            <button onclick="generatePackage()">
+                🚀 Yayın Paketi
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

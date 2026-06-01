@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f1117;
+    color:white;
+    font-family:Inter, Arial, sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+}
+
+.container{
+
+    width:800px;
+    max-width:100%;
+
+    background:#181c25;
+
+    border:1px solid rgba(83,252,24,.15);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:
+    0 0 30px rgba(83,252,24,.08);
+}
+
+.logo{
+    width:140px;
+    display:block;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#53FC18;
+    margin-top:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#9ca3af;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#222733;
+
+    color:white;
+
+    outline:none;
+}
+
+.actions{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-top:18px;
+}
+
+button{
+
+    background:#53FC18;
+
+    color:black;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 0 15px rgba(83,252,24,.35);
+}
+
+#result{
+
+    margin-top:25px;
+}
+
+.card{
+
+    background:#222733;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    line-height:1.7;
+
+    white-space:pre-wrap;
+}
+
+.title-card{
+
+    background:#222733;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    margin-top:10px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.copy-btn{
+
+    background:#53FC18;
+
+    color:black;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:8px 12px;
+
+    cursor:pointer;
+
+    width:auto;
+}
+
+.loading{
+
+    text-align:center;
+
+    color:#53FC18;
+
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+
+    .actions{
+
+        grid-template-columns:1fr;
+    }
+
+    .container{
+
+        padding:20px;
+    }
+}
